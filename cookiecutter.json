@@ -1,0 +1,25 @@
+{
+    "author_name": "5h4d0wb0y",
+    "author_email": "5h4d0wb0y@example.com",
+
+    "project_name": "Cookiecutter Flutter Starter Kit",
+    "project_slug": "{{ cookiecutter.project_name.lower()|replace(' ', '_')|replace('-', '_')|replace('.', '_')|trim() }}",
+    "project_description": "Deploy your flutter project with this Starter Kit.",
+    "project_version": "0.1.0",
+    "app_id": "com.example.{{ cookiecutter.project_slug }}",
+
+    "year": "{% now 'utc', '%Y' %}",
+
+    "open_source_license": [
+        "MIT",
+        "BSD",
+        "ISC license",
+        "Apache Software License 2.0",
+        "GNU General Public License v3",
+        "Not open source"
+    ],
+
+    "_copy_without_render": [
+        "android/gradlew"
+    ]
+}
